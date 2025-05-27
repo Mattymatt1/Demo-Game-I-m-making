@@ -3,13 +3,13 @@ function vec2D(x, y)
   v = { x = x or 0,
          y = y or 0}  
        
-setmetatable(v, addVecs)
+setmetatable(v, FuncVecs)
      setmetatable(v, creationtable)
      return v
 end
 
 
-addVecs = {__add = function(a, b)
+FuncVecs = {__add = function(a, b)
        return vec2D(a.x + b.x, a.y + b.y)
 end, __call = function(self)
    print(self.x .. ", " .. self.y)    

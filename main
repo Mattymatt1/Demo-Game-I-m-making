@@ -8,13 +8,12 @@ setmetatable(v, addVecs)
 end
 
 
-
 addVecs = {__add = function(a, b)
        return vec2D(a.x + b.x, a.y + b.y)
 end, __call = function(self)
    print(self.x .. ", " .. self.y)    
 end
-
+}
 
 
 

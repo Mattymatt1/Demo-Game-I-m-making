@@ -14,7 +14,7 @@ addVecs = {__add = function(a, b)
 end, __call = function(self)
    print(self.x .. ", " .. self.y)    
 end
-}
+
 
 
 

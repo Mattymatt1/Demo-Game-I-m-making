@@ -2,7 +2,7 @@
 function vec2D(x, y)
   v = { x = x or 0,
          y = y or 0}  
-       
+      
 setmetatable(v, FuncVecs)
      setmetatable(v, creationtable)
      return v
